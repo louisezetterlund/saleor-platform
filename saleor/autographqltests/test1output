@@ -1,0 +1,282 @@
+.........F.....F...............................................  63 / 676 (  9%)
+.............................................................F. 126 / 676 ( 18%)
+..........F.......F........................................F... 189 / 676 ( 27%)
+..................................................E............ 252 / 676 ( 37%)
+.......F.F..................................................... 315 / 676 ( 46%)
+..................F......F..................F........E......... 378 / 676 ( 55%)
+.....E......................................................... 441 / 676 ( 65%)
+..F.....F...................................................... 504 / 676 ( 74%)
+..E......F.F........................F...........E..E..........F 567 / 676 ( 83%)
+.........E..................................................... 630 / 676 ( 93%)
+.F...F......F.................................                  676 / 676 (100%)
+
+Time: 01:47.871, Memory: 58.00 MB
+
+There were 7 errors:
+
+1) GraphQL\Q2f81d20268615531afcb5c7fa10533bdTest::testGraphQL
+GuzzleHttp\Exception\ClientException: Client error: `POST http://localhost:8000/graphql/` resulted in a `400 Bad Request` response:
+{"errors": [{"message": "'str' object has no attribute 'get'", "extensions": {"exception": {"code": "AttributeError", "s (truncated...)
+
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Middleware.php:65
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:204
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:153
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/TaskQueue.php:48
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:248
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:224
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:269
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:226
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:62
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Client.php:182
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q2f81d20268615531afcb5c7fa10533bdTest.php:20
+
+2) GraphQL\Q4e684b82caeb5861846f4e043849c608Test::testGraphQL
+GuzzleHttp\Exception\ClientException: Client error: `POST http://localhost:8000/graphql/` resulted in a `400 Bad Request` response:
+{"errors": [{"message": "'str' object has no attribute 'get'", "extensions": {"exception": {"code": "AttributeError", "s (truncated...)
+
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Middleware.php:65
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:204
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:153
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/TaskQueue.php:48
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:248
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:224
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:269
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:226
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:62
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Client.php:182
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q4e684b82caeb5861846f4e043849c608Test.php:20
+
+3) GraphQL\Q51e482e8ba6958068ab7f262deabfe2bTest::testGraphQL
+GuzzleHttp\Exception\ClientException: Client error: `POST http://localhost:8000/graphql/` resulted in a `400 Bad Request` response:
+{"errors": [{"message": "'str' object has no attribute 'get'", "extensions": {"exception": {"code": "AttributeError", "s (truncated...)
+
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Middleware.php:65
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:204
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:153
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/TaskQueue.php:48
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:248
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:224
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:269
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:226
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:62
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Client.php:182
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q51e482e8ba6958068ab7f262deabfe2bTest.php:20
+
+4) GraphQL\Q6ec2f31fc79a52c990ddc7346b318be0Test::testGraphQL
+GuzzleHttp\Exception\ClientException: Client error: `POST http://localhost:8000/graphql/` resulted in a `400 Bad Request` response:
+{"errors": [{"message": "'str' object has no attribute 'get'", "extensions": {"exception": {"code": "AttributeError", "s (truncated...)
+
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Middleware.php:65
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:204
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:153
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/TaskQueue.php:48
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:248
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:224
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:269
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:226
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:62
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Client.php:182
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q6ec2f31fc79a52c990ddc7346b318be0Test.php:20
+
+5) GraphQL\Q7b18b2c56b7d5728ae415f329ce5b734Test::testGraphQL
+GuzzleHttp\Exception\ClientException: Client error: `POST http://localhost:8000/graphql/` resulted in a `400 Bad Request` response:
+{"errors": [{"message": "'str' object has no attribute 'get'", "extensions": {"exception": {"code": "AttributeError", "s (truncated...)
+
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Middleware.php:65
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:204
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:153
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/TaskQueue.php:48
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:248
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:224
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:269
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:226
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:62
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Client.php:182
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q7b18b2c56b7d5728ae415f329ce5b734Test.php:20
+
+6) GraphQL\Q7ba13d6da7135bf69d1622e299018098Test::testGraphQL
+GuzzleHttp\Exception\ClientException: Client error: `POST http://localhost:8000/graphql/` resulted in a `400 Bad Request` response:
+{"errors": [{"message": "'str' object has no attribute 'get'", "extensions": {"exception": {"code": "AttributeError", "s (truncated...)
+
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Middleware.php:65
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:204
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:153
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/TaskQueue.php:48
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:248
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:224
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:269
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:226
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:62
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Client.php:182
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q7ba13d6da7135bf69d1622e299018098Test.php:20
+
+7) GraphQL\Q7edc1556ccf1540aa24ebcd5a8ba8c94Test::testGraphQL
+GuzzleHttp\Exception\ClientException: Client error: `POST http://localhost:8000/graphql/` resulted in a `400 Bad Request` response:
+{"errors": [{"message": "'str' object has no attribute 'get'", "extensions": {"exception": {"code": "AttributeError", "s (truncated...)
+
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Middleware.php:65
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:204
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:153
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/TaskQueue.php:48
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:248
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:224
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:269
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:226
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/promises/src/Promise.php:62
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/vendor/guzzlehttp/guzzle/src/Client.php:182
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q7edc1556ccf1540aa24ebcd5a8ba8c94Test.php:20
+
+--
+
+There were 20 failures:
+
+1) GraphQL\Q02ee2c02ecd75462a8d38a97bbb0b3a2Test::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q02ee2c02ecd75462a8d38a97bbb0b3a2Test.php:28
+
+2) GraphQL\Q040c6e4e04ac5b3898fbb7e137f48c5bTest::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q040c6e4e04ac5b3898fbb7e137f48c5bTest.php:28
+
+3) GraphQL\Q1b4242fb38e4582092a534aa5ec2e726Test::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q1b4242fb38e4582092a534aa5ec2e726Test.php:28
+
+4) GraphQL\Q1d007d7ebafe51c29924c963f47d90acTest::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q1d007d7ebafe51c29924c963f47d90acTest.php:28
+
+5) GraphQL\Q1e2e9a0ccf2853079392e533a3f40d54Test::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q1e2e9a0ccf2853079392e533a3f40d54Test.php:28
+
+6) GraphQL\Q26e3a3e69dd55cc48708670dd6986d22Test::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q26e3a3e69dd55cc48708670dd6986d22Test.php:28
+
+7) GraphQL\Q33fa0d62bf335516832a6159d51113caTest::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q33fa0d62bf335516832a6159d51113caTest.php:28
+
+8) GraphQL\Q37c566ef09f85e6f993aabd862adaf2eTest::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q37c566ef09f85e6f993aabd862adaf2eTest.php:28
+
+9) GraphQL\Q46dedc316d0d5bd4ab01ec7a91a1651cTest::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q46dedc316d0d5bd4ab01ec7a91a1651cTest.php:28
+
+10) GraphQL\Q4a7aad8d77d453908dcc928e7e26971cTest::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q4a7aad8d77d453908dcc928e7e26971cTest.php:28
+
+11) GraphQL\Q4d26735340dc56a6999b355182b06b5dTest::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q4d26735340dc56a6999b355182b06b5dTest.php:28
+
+12) GraphQL\Q5f4ed61a2f535428b259c4b4306d9e97Test::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q5f4ed61a2f535428b259c4b4306d9e97Test.php:28
+
+13) GraphQL\Q60e6e8d6b7bc5a8489f0043e09faa43aTest::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q60e6e8d6b7bc5a8489f0043e09faa43aTest.php:28
+
+14) GraphQL\Q6fae03f0f09f59b492b38193c0cfb27bTest::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q6fae03f0f09f59b492b38193c0cfb27bTest.php:28
+
+15) GraphQL\Q70fba6712dea5c6198a9ee31142d3f84Test::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q70fba6712dea5c6198a9ee31142d3f84Test.php:28
+
+16) GraphQL\Q77b6f115c3e150f1b136159834b8a525Test::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q77b6f115c3e150f1b136159834b8a525Test.php:28
+
+17) GraphQL\Q7df8d505b7695a369cad2f870377dacaTest::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q7df8d505b7695a369cad2f870377dacaTest.php:28
+
+18) GraphQL\Q8e3771f0b19a54f795ae003854c03c75Test::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q8e3771f0b19a54f795ae003854c03c75Test.php:28
+
+19) GraphQL\Q8e772b7c1c9851a4b016da0eefb15e42Test::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q8e772b7c1c9851a4b016da0eefb15e42Test.php:28
+
+20) GraphQL\Q8fb6e2e8f97452789906e569ea1a89e2Test::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q8fb6e2e8f97452789906e569ea1a89e2Test.php:28
+
+ERRORS!
+Tests: 676, Assertions: 35794, Errors: 7, Failures: 20.
+Louises-MBP:saleor louisezetterlund$ autographqltests/vendor/bin/phpunit autographqltests/test1/Q60e6e8d6b7bc5a8489f0043e09faa43aTest.php 
+PHPUnit 9.5.8 by Sebastian Bergmann and contributors.
+
+F                                                                   1 / 1 (100%)
+
+Time: 00:00.140, Memory: 6.00 MB
+
+There was 1 failure:
+
+1) GraphQL\Q60e6e8d6b7bc5a8489f0043e09faa43aTest::testGraphQL
+Response contains errors
+Failed asserting that an array does not have the key 'errors'.
+
+/Users/louisezetterlund/sites/saleor-platform/saleor/autographqltests/test1/Q60e6e8d6b7bc5a8489f0043e09faa43aTest.php:28
