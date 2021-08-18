@@ -1,0 +1,62 @@
+<?php
+declare(strict_types=1);
+
+namespace GraphQL;
+
+use PHPUnit\Framework\TestCase;
+
+class Qa507517a759c5115ac7da139766c1faaTest extends TestCase
+{
+
+    public function testGraphQL()
+    {
+        $client = new \GuzzleHttp\Client();
+
+        $query = <<<'JSON'
+{"query": "\n    query DraftOrdersQuery {\n        draftOrders(first: 10) {\n            edges {\n                node {\n                    id\n                }\n            }\n        }\n    }\n    ", "variables": "", "operationName": ""}
+JSON;
+
+        
+        $response = $client->request('POST', 'http://localhost:8000/graphql/', ['body' => $query, 'headers' => ['Content-Type' => 'application/json', 'Authorization' => 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjY3MDY1NTcsImV4cCI6MTYyNjcwNjg1NywidG9rZW4iOiJzOHYybHE1dU1KdVYiLCJlbWFpbCI6ImxvdWlzZXplQGt0aC5zZSIsInR5cGUiOiJhY2Nlc3MiLCJ1c2VyX2lkIjoiVlhObGNqb3lOQT09IiwiaXNfc3RhZmYiOnRydWV9.prCNTqlOaPYkTTGnfILkID6ZxqvjdCvdUYBMbV2xOF4']]);
+        
+        $this->assertEquals(200, $response->getStatusCode());
+
+        $responseArray = json_decode((string)$response->getBody(), true);
+
+        $this->assertIsArray($responseArray, 'Response is not valid JSON');
+
+        $this->assertArrayNotHasKey('errors', $responseArray, 'Response contains errors');
+
+        $responseContent = $responseArray['data'];
+
+
+        
+        $this->assertArrayHasKey('draftOrders', $responseContent);
+        
+        if ($responseContent['draftOrders']) {
+        
+        $this->assertArrayHasKey('edges', $responseContent['draftOrders']);
+        
+        $this->assertNotNull($responseContent['draftOrders']['edges']);
+        
+        $this->assertIsArray($responseContent['draftOrders']['edges']);
+        
+        for($g = 0; $g < count($responseContent['draftOrders']['edges']); $g++) {
+        
+        $this->assertNotNull($responseContent['draftOrders']['edges'][$g]);
+        
+        $this->assertArrayHasKey('node', $responseContent['draftOrders']['edges'][$g]);
+        
+        $this->assertNotNull($responseContent['draftOrders']['edges'][$g]['node']);
+        
+        $this->assertArrayHasKey('id', $responseContent['draftOrders']['edges'][$g]['node']);
+        
+        $this->assertNotNull($responseContent['draftOrders']['edges'][$g]['node']['id']);
+        
+        }
+        
+        }
+        
+
+    }
+}
