@@ -9,5 +9,5 @@ class Autographql(models.Model):
     updatedAt = models.DateTimeField(default=now, editable=True)
     timesCalled = models.IntegerField(default=1, editable=True)
     query = models.TextField()
-    variables = models.CharField(max_length=1000)
+    variables = models.CharField(max_length=2000)
     operationName = models.CharField(max_length=100)
