@@ -34,7 +34,7 @@ class AutoGraphQLMiddleware:
             if '__schema' in query:
                 return next_(root, info, **kwargs)
             if 'variables' in res_dict:
-                arguments = str(res_dict['variables']).replace("'", '"').replace("None", "null")
+                arguments = str(res_dict['variables']).replace("'", '"').replace("None", "null").replace("True", "true").replace("False", "false")
             else:
                 arguments = ''
             if 'operationName' in res_dict:
