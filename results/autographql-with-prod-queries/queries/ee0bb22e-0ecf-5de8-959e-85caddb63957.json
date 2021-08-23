@@ -1,0 +1,1 @@
+{"query": "fragment MenuErrorFragment on MenuError {\n  code\n  field\n  __typename\n}\n\nmutation MenuBulkDelete($ids: [ID]!) {\n  menuBulkDelete(ids: $ids) {\n    errors: menuErrors {\n      ...MenuErrorFragment\n      __typename\n    }\n    __typename\n  }\n}\n", "variables": {"ids": ["TWVudTo1", "TWVudTo0"]}, "operationName": "MenuBulkDelete"}

@@ -1,0 +1,1 @@
+{"query": "fragment AccountErrorFragment on AccountError {\n  code\n  field\n  __typename\n}\n\nmutation BulkRemoveCustomers($ids: [ID]!) {\n  customerBulkDelete(ids: $ids) {\n    errors: accountErrors {\n      ...AccountErrorFragment\n      __typename\n    }\n    __typename\n  }\n}\n", "variables": {"ids": ["VXNlcjo0"]}, "operationName": "BulkRemoveCustomers"}

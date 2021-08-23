@@ -1,0 +1,1 @@
+{"query": "fragment WebhookErrorFragment on WebhookError {\n  code\n  field\n  __typename\n}\n\nmutation WebhookDelete($id: ID!) {\n  webhookDelete(id: $id) {\n    errors: webhookErrors {\n      ...WebhookErrorFragment\n      __typename\n    }\n    __typename\n  }\n}\n", "variables": {"id": "V2ViaG9vazox"}, "operationName": "WebhookDelete"}

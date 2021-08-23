@@ -1,0 +1,1 @@
+{"query": "mutation SaleBulkDelete($ids: [ID]!) {\n  saleBulkDelete(ids: $ids) {\n    errors {\n      field\n      message\n      __typename\n    }\n    __typename\n  }\n}\n", "variables": {"ids": ["U2FsZTo2"]}, "operationName": "SaleBulkDelete"}
