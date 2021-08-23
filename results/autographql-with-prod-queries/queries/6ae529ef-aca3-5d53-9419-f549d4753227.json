@@ -1,1 +1,0 @@
-{"query": "fragment ShippingErrorFragment on ShippingError {\n  code\n  field\n  __typename\n}\n\nmutation DeleteShippingZone($id: ID!) {\n  shippingZoneDelete(id: $id) {\n    errors: shippingErrors {\n      ...ShippingErrorFragment\n      __typename\n    }\n    __typename\n  }\n}\n", "variables": {"id": "U2hpcHBpbmdab25lOjY="}, "operationName": "DeleteShippingZone"}

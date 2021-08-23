@@ -1,1 +1,0 @@
-{"query": "fragment OrderErrorFragment on OrderError {\n  code\n  field\n  __typename\n}\n\nmutation OrderDraftCreate {\n  draftOrderCreate(input: {}) {\n    errors: orderErrors {\n      ...OrderErrorFragment\n      __typename\n    }\n    order {\n      id\n      __typename\n    }\n    __typename\n  }\n}\n", "variables": {}, "operationName": "OrderDraftCreate"}

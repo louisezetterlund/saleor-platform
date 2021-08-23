@@ -1,1 +1,0 @@
-{"query": "query CoverEmAll {\n  translations(kind: PRODUCT) {\n    edges {\n      cursor\n      node {\n        __typename\n      }\n    }\n  }\n}\n", "variables": {}, "operationName": "CoverEmAll"}

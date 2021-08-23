@@ -1,1 +1,0 @@
-{"query": "query CoverEmAll {\n  productVariants(first: 10) {\n    edges {\n      node {\n        id\n        name\n      }\n    }\n  }\n}\n", "variables": {}, "operationName": "CoverEmAll"}
