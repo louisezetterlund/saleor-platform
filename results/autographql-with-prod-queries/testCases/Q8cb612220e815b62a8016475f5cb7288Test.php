@@ -13,11 +13,11 @@ class Q8cb612220e815b62a8016475f5cb7288Test extends TestCase
         $client = new \GuzzleHttp\Client();
 
         $query = <<<'JSON'
-{"query": "fragment CountryFragment on CountryDisplay {\n  country\n  code\n  __typename\n}\n\nfragment CountryWithTaxesFragment on CountryDisplay {\n  ...CountryFragment\n  vat {\n    standardRate\n    reducedRates {\n      rateType\n      rate\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n\nfragment ShopTaxesFragment on Shop {\n  chargeTaxesOnShipping\n  includeTaxesInPrices\n  displayGrossPrices\n  __typename\n}\n\nquery CountryList {\n  shop {\n    ...ShopTaxesFragment\n    countries {\n      ...CountryWithTaxesFragment\n      __typename\n    }\n    __typename\n  }\n}\n", "variables": {}, "operationName": "CountryList"}
+{"query": "fragment CountryFragment on CountryDisplay {\n  country\n  code\n  __typename\n}\n\nfragment CountryWithTaxesFragment on CountryDisplay {\n  ...CountryFragment\n  vat {\n    standardRate\n    reducedRates {\n      rateType\n      rate\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n\nfragment ShopTaxesFragment on Shop {\n  chargeTaxesOnShipping\n  includeTaxesInPrices\n  displayGrossPrices\n  __typename\n}\n\nquery CountryList {\n  shop {\n    ...ShopTaxesFragment\n    countries {\n      ...CountryWithTaxesFragment\n      __typename\n    }\n    __typename\n  }\n}\n", "variables": {}, "operationName": "CountryList", "timesCalled": 5, "createdAt": "2021-09-04 13:17:19.268251+00:00", "updatedAt": "2021-09-04 20:28:55.739213+00:00"}
 JSON;
 
         
-        $response = $client->request('POST', 'http://localhost:8000/graphql/', ['body' => $query, 'headers' => ['Content-Type' => 'application/json', 'Authorization' => 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjgyNTQ4NDYsImV4cCI6MTYyODI1NTE0NiwidG9rZW4iOiJEUG1Qa0ZkQ3ZQenUiLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidHlwZSI6ImFjY2VzcyIsInVzZXJfaWQiOiJWWE5sY2pveU5BPT0iLCJpc19zdGFmZiI6dHJ1ZX0.v7mrbSD5ONo95cIQ1Jk91lC3l_lO7Nd8fHTSahtClBc']]);
+        $response = $client->request('POST', 'http://localhost:8000/graphql/', ['body' => $query, 'headers' => ['Content-Type' => 'application/json', 'Authorization' => 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzA2ODY2OTIsImV4cCI6MTYzMDY4Njk5MiwidG9rZW4iOiJkUWV3MWVIRG1pZUEiLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidHlwZSI6ImFjY2VzcyIsInVzZXJfaWQiOiJWWE5sY2pveU5BPT0iLCJpc19zdGFmZiI6dHJ1ZX0.M6D9gSNXGeQEq_uDlRIzGnRrswsVt1Tm_04E95sQv-E']]);
         
         $this->assertEquals(200, $response->getStatusCode());
 

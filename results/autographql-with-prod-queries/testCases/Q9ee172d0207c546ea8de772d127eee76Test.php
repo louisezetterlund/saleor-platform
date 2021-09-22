@@ -13,11 +13,11 @@ class Q9ee172d0207c546ea8de772d127eee76Test extends TestCase
         $client = new \GuzzleHttp\Client();
 
         $query = <<<'JSON'
-{"query": "query AppsList($before: String, $after: String, $first: Int, $last: Int, $sort: AppSortingInput, $filter: AppFilterInput) {\n  apps(before: $before, after: $after, first: $first, last: $last, sortBy: $sort, filter: $filter) {\n    pageInfo {\n      hasNextPage\n      hasPreviousPage\n      startCursor\n      endCursor\n      __typename\n    }\n    totalCount\n    edges {\n      node {\n        id\n        name\n        isActive\n        type\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n", "variables": {"first": 100, "sort": {"direction": "DESC", "field": "CREATION_DATE"}, "filter": {"type": "LOCAL"}}, "operationName": "AppsList"}
+{"query": "query AppsList($before: String, $after: String, $first: Int, $last: Int, $sort: AppSortingInput, $filter: AppFilterInput) {\n  apps(before: $before, after: $after, first: $first, last: $last, sortBy: $sort, filter: $filter) {\n    pageInfo {\n      hasNextPage\n      hasPreviousPage\n      startCursor\n      endCursor\n      __typename\n    }\n    totalCount\n    edges {\n      node {\n        id\n        name\n        isActive\n        type\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n", "variables": {"first": 100, "sort": {"direction": "DESC", "field": "CREATION_DATE"}, "filter": {"type": "LOCAL"}}, "operationName": "AppsList", "timesCalled": 2, "createdAt": "2021-09-04 13:39:07.760736+00:00", "updatedAt": "2021-09-04 20:28:57.140734+00:00"}
 JSON;
 
         
-        $response = $client->request('POST', 'http://localhost:8000/graphql/', ['body' => $query, 'headers' => ['Content-Type' => 'application/json', 'Authorization' => 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjgyNTQ4NDYsImV4cCI6MTYyODI1NTE0NiwidG9rZW4iOiJEUG1Qa0ZkQ3ZQenUiLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidHlwZSI6ImFjY2VzcyIsInVzZXJfaWQiOiJWWE5sY2pveU5BPT0iLCJpc19zdGFmZiI6dHJ1ZX0.v7mrbSD5ONo95cIQ1Jk91lC3l_lO7Nd8fHTSahtClBc']]);
+        $response = $client->request('POST', 'http://localhost:8000/graphql/', ['body' => $query, 'headers' => ['Content-Type' => 'application/json', 'Authorization' => 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzA2ODY2OTIsImV4cCI6MTYzMDY4Njk5MiwidG9rZW4iOiJkUWV3MWVIRG1pZUEiLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidHlwZSI6ImFjY2VzcyIsInVzZXJfaWQiOiJWWE5sY2pveU5BPT0iLCJpc19zdGFmZiI6dHJ1ZX0.M6D9gSNXGeQEq_uDlRIzGnRrswsVt1Tm_04E95sQv-E']]);
         
         $this->assertEquals(200, $response->getStatusCode());
 

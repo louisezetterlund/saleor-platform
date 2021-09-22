@@ -1,1 +1,0 @@
-{"query": "query CheckExportFileStatus($id: ID!) {\n  exportFile(id: $id) {\n    id\n    status\n    __typename\n  }\n}\n", "variables": {"id": "RXhwb3J0RmlsZToz"}, "operationName": "CheckExportFileStatus"}

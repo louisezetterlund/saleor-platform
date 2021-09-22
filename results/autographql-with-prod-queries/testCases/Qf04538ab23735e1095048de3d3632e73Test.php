@@ -13,11 +13,11 @@ class Qf04538ab23735e1095048de3d3632e73Test extends TestCase
         $client = new \GuzzleHttp\Client();
 
         $query = <<<'JSON'
-{"query": "fragment PageInfoFragment on PageInfo {\n  endCursor\n  hasNextPage\n  hasPreviousPage\n  startCursor\n  __typename\n}\n\nquery SearchAvailableAttributes($id: ID!, $after: String, $first: Int!, $query: String!) {\n  productType(id: $id) {\n    id\n    availableAttributes(after: $after, first: $first, filter: {search: $query}) {\n      edges {\n        node {\n          id\n          name\n          slug\n          __typename\n        }\n        __typename\n      }\n      pageInfo {\n        ...PageInfoFragment\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n", "variables": {"after": null, "first": 20, "query": "", "id": "UHJvZHVjdFR5cGU6MTY="}, "operationName": "SearchAvailableAttributes"}
+{"query": "fragment PageInfoFragment on PageInfo {\n  endCursor\n  hasNextPage\n  hasPreviousPage\n  startCursor\n  __typename\n}\n\nquery SearchAvailableAttributes($id: ID!, $after: String, $first: Int!, $query: String!) {\n  productType(id: $id) {\n    id\n    availableAttributes(after: $after, first: $first, filter: {search: $query}) {\n      edges {\n        node {\n          id\n          name\n          slug\n          __typename\n        }\n        __typename\n      }\n      pageInfo {\n        ...PageInfoFragment\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n", "variables": {"after": null, "first": 20, "query": "", "id": "UHJvZHVjdFR5cGU6MTY="}, "operationName": "SearchAvailableAttributes", "timesCalled": 17, "createdAt": "2021-09-04 13:24:03.855869+00:00", "updatedAt": "2021-09-04 20:29:05.041856+00:00"}
 JSON;
 
         
-        $response = $client->request('POST', 'http://localhost:8000/graphql/', ['body' => $query, 'headers' => ['Content-Type' => 'application/json', 'Authorization' => 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MjgyNTQ4NDYsImV4cCI6MTYyODI1NTE0NiwidG9rZW4iOiJEUG1Qa0ZkQ3ZQenUiLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidHlwZSI6ImFjY2VzcyIsInVzZXJfaWQiOiJWWE5sY2pveU5BPT0iLCJpc19zdGFmZiI6dHJ1ZX0.v7mrbSD5ONo95cIQ1Jk91lC3l_lO7Nd8fHTSahtClBc']]);
+        $response = $client->request('POST', 'http://localhost:8000/graphql/', ['body' => $query, 'headers' => ['Content-Type' => 'application/json', 'Authorization' => 'JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzA2ODY2OTIsImV4cCI6MTYzMDY4Njk5MiwidG9rZW4iOiJkUWV3MWVIRG1pZUEiLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidHlwZSI6ImFjY2VzcyIsInVzZXJfaWQiOiJWWE5sY2pveU5BPT0iLCJpc19zdGFmZiI6dHJ1ZX0.M6D9gSNXGeQEq_uDlRIzGnRrswsVt1Tm_04E95sQv-E']]);
         
         $this->assertEquals(200, $response->getStatusCode());
 
